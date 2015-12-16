@@ -52,6 +52,13 @@ use credentials to talk to AWS -------------------------------->  S3 access
 
 ```
 
+# Prep
+
+Heroku:
+1. Deploy from git repository
+2. run: `heroku run rake db:schema:load --app YOUR_APP_NAME`
+3. run: `heroku run rake db:seed --app YOUR_APP_NAME`
+* The seed given gives admin access
 
 # Amazon Prep:
 
