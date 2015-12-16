@@ -1,3 +1,12 @@
+# AUTH_API
+
+The Rails server accompaniment to AUTH_APP (https://github.com/laterDays/auth_app). This project demonstrates one way to set up OAUTH communication with an iOS application. The following are demonstrated:
+
+devise (https://github.com/plataformatec/devise) for user authentication  
+doorkeeper (https://github.com/doorkeeper-gem/doorkeeper) for OAUTH
+
+After OAUTH authentication is established, credentials are retrieved from Amazon Cognito. The method shown here uses developer authentication to pass AWS Congnito credentials to the iOS application (http://docs.aws.amazon.com/cognito/devguide/identity/concepts/authentication-flow/ , look for "Developer Authenticated Identities Authflow")
+
 # Authentication Overview
 
 ```
