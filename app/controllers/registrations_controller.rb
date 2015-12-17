@@ -2,7 +2,7 @@ class RegistrationsController < Devise::RegistrationsController
   skip_before_filter  :verify_authenticity_token
   def create
   	logger.info "[ ] RegistrationsController.create() params: " + user_params.to_json
-    @user = User.create(user_params[:user])
+    @user = User.create(user_params) # or do I put user_params?
     if @user.save
       render :json => {:state => {:code => 0}, :data => @user }
     else
