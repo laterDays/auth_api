@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   root 'users#index'
 
   use_doorkeeper
-  devise_for :users
+  
+  devise_for :users, :controllers => {:registrations => "registrations"}
   
   #api
   namespace :api do
