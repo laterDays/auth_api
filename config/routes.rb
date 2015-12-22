@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   use_doorkeeper
   
-  devise_for :users, :controllers => {:registrations => "registrations"}
+  devise_for :users, :controllers => {:registrations => "registrations", :sessions => "sessions"}
   
   #api
   namespace :api do
